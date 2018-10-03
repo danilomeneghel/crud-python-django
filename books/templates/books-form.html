@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link type="text/css" rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Register Book</title>
 </head>
@@ -19,8 +20,8 @@
     <form method="POST" novalidate>
         {% csrf_token %}
         {{ form|bootstrap }}
-        <input type="button" onclick="location.href='/'" class="btn btn-outline-secondary" value="Back">
-		<input type="submit" value="Save" class="btn btn-success" />
+        <a href="/" class="btn btn-outline-secondary"><i class="fa fa-arrow-left"></i> Back</a>
+		<button type="submit" class="btn btn-success"><i class="fa fa-hdd-o"></i> Save</button>
     </form>
 	
 	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>

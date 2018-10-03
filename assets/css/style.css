@@ -1,0 +1,18 @@
+h1, h2, h3 {
+    padding-bottom: 15px;
+}
+.search-right {
+    display: block;
+    width: 50%;
+    float: right;
+    text-align: right;
+    height: 40px;
+}
+.pag-right {
+    display: block;
+    width: 50%;
+    float: right;
+    text-align: right;
+    margin-top: -15px;
+    height: 50px;
+}

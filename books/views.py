@@ -8,7 +8,7 @@ from .forms import BookForm
 def list_books(request):
     query = request.GET.get('q')
     if query:
-       books = Book.objects.filter(Q(name__contains=query))
+       books = Book.objects.filter(Q(name__icontains=query))
     else:
        books = Book.objects.all()
 

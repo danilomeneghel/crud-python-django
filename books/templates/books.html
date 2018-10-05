@@ -1,21 +1,10 @@
-{% load static from staticfiles %}
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-	<link type="text/css" rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-	<link type="text/css" rel="stylesheet" href="{% static 'css/pagination.css' %}">
-	<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>List Books</title>
-</head>
-<body>
+{% extends 'layouts/base.html' %}
+{% block content %}
 	<h1>List Books</h1>
 	<a href="{% url 'create_books' %}" class="btn btn-success"><i class="fa fa-plus"></i> New Book</a>
 	<div class="search-right">
 		<form method="GET" action="">
-			<input type="text" name="q" value="{{request.GET.q}}">
+			<input type="text" name="q" value="{{request.GET.q}}" class="form-control">
 			<button type="submit" class="btn btn-primary">
 				<i class="fa fa-search"></i> Search
 			</button>
@@ -36,17 +25,14 @@
 				<td>{{ book.name }}</td>
 				<td>{{ book.author }}</td>
 				<td>{{ book.price }}</td>
-				<td><a href="{% url 'update_book' book.id %}" class="btn btn-primary"><i class="fa fa-pencil"></i> Edit</a> 
+				<td><a href="{% url 'update_book' book.id %}" class="btn btn-primary"><i class="fa fa-pencil"></i> Edit</a>
 				<a href="{% url 'delete_book' book.id %}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this item?')"><i class="fa fa-trash"></i> Delete</a></td>
 			</tr>
 		{% endfor %}
 		</tbody>
 	</table>
-	
+
 	<div class="pag-right">
 		{% include 'pagination.html' with page=books %}
 	</div>
-	
-	<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-</body>
-</html>
+{% endblock %}

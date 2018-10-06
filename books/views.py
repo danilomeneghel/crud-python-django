@@ -6,11 +6,21 @@ from .forms import BookForm
 
 
 def list_books(request):
-    query = request.GET.get('q')
-    if query:
-       books = Book.objects.filter(Q(name__icontains=query))
+    # Search
+    search = request.GET.get('search')
+    if search:
+       books = Book.objects.filter(Q(name__icontains=search))
     else:
        books = Book.objects.all()
+
+    # Order
+    sort = request.GET.get('sort')
+    order = request.GET.get('order')
+    if sort:
+        if order == 'asc':
+           books = Book.objects.order_by(sort)
+        else:
+           books = Book.objects.order_by(sort).reverse()
 
     # Pagination
     paginator = Paginator(books, 5)
@@ -52,4 +62,3 @@ def delete_book(request, id):
     book.delete()
 
     return redirect('list_books')
-

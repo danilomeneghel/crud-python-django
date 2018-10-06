@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'bootstrapform',
+    'sortable_column',
     'books',
 ]
 
@@ -72,6 +73,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
+SORTABLE_COLUMN_SETTINGS = {
+    'class_name': 'sortable',
+    'icon': 'fa fa-sort',
+    'icon_asc':'fa fa-sort-asc',
+    'icon_desc':'fa fa-sort-desc',
+    'icon_placement': 'left',
+    'conf_by_css': False,
+}
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases

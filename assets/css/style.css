@@ -81,7 +81,7 @@ body {
 
 .col-actions {
 	text-align: center;
-	width: 250px !important;
+	width: 200px !important;
 }
 
 .btn {
@@ -100,4 +100,8 @@ td {
 
 .container-form {
 	margin-left: -15px !important;
+}
+
+.alert {
+  margin-top: 15px !important;
 }

@@ -5,9 +5,9 @@ Project of an books registration using Python and Django.
 ## Features
 
 - CRUD
-- MVC
 - Active Record
 - Search
+- Sort Column
 - Paginate
 - Routes
 - Migrate

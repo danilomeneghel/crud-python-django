@@ -53,7 +53,12 @@ $ python manage.py show_urls
 
 ## Demonstration
 
+You can see the system working by clicking the link below:<br>
 https://crud-python-django.herokuapp.com/
+
+- Login:
+    - Username: admin
+    - Password: admin
 
 ## License
 
@@ -72,4 +77,3 @@ Developed by<br>
 Danilo Meneghel<br>
 danilo.meneghel@gmail.com<br>
 http://danilomeneghel.github.io/<br>
-

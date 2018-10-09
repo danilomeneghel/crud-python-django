@@ -45,6 +45,12 @@ $ python manage.py runserver
 
 Finally open http://localhost:8000/ in your browser.
 
+## Create new modules
+
+```
+$ python manage.py startapp name_module
+```
+
 ## Routes
 
 ```

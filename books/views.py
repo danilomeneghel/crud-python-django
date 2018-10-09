@@ -1,10 +1,11 @@
 from django.shortcuts import render, redirect
 from django.db.models import Q
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger # < Import these
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.contrib.auth.decorators import login_required
 from .models import Book
 from .forms import BookForm
 
-
+@login_required
 def list_books(request):
     # Search
     search = request.GET.get('search')
@@ -35,7 +36,7 @@ def list_books(request):
 
     return render(request, 'books.html', {'books': books, 'page': page})
 
-
+@login_required
 def create_book(request):
     form = BookForm(request.POST or None)
 
@@ -45,7 +46,7 @@ def create_book(request):
 
     return render(request, 'books-form.html', {'form': form})
 
-
+@login_required
 def update_book(request, id):
     book = Book.objects.get(id=id)
     form = BookForm(request.POST or None, instance=book)
@@ -56,7 +57,7 @@ def update_book(request, id):
 
     return render(request, 'books-form.html', {'form': form, 'book': book})
 
-
+@login_required
 def delete_book(request, id):
     book = Book.objects.get(id=id)
     book.delete()

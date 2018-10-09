@@ -1,0 +1,27 @@
+{% extends 'layouts/login.html' %}
+{% load bootstrap %}
+{% block content %}
+  <form action="{% url 'users:login' %}" method="POST">
+    {% csrf_token %}
+    <div class="panel panel-default">
+    	<div class="panel-body">
+        <h2 class="title-login">Sign in</h2>
+        <div class="form-group">
+          <label for="inputEmail" class="sr-only">Username</label>
+          <input type="text" name="username" class="form-control" placeholder="Username" required autofocus>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" name="password" class="form-control" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-lg btn-success btn-block" type="submit">Login</button>
+        </div>
+        <a href="{% url 'users:register' %}" class="link-register">Create an account</a>
+		{% if error %}
+			<div class="alert alert-danger">{{error}}</div>
+		{% endif %}
+      </div>
+    </div>
+  </form>
+{% endblock %}

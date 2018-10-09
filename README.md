@@ -6,6 +6,7 @@ Project of an books registration using Python and Django.
 
 - CRUD
 - Active Record
+- Login
 - Search
 - Sort Column
 - Paginate
@@ -64,6 +65,8 @@ This project is licensed under <a href="LICENSE">The MIT License (MIT)</a>.
 ![Screenshots](screenshots/screenshot02.png)<br><br>
 ![Screenshots](screenshots/screenshot03.png)<br><br>
 ![Screenshots](screenshots/screenshot04.png)<br><br>
+![Screenshots](screenshots/screenshot05.png)<br><br>
+![Screenshots](screenshots/screenshot06.png)<br><br>
 
 Developed by<br>
 Danilo Meneghel<br>

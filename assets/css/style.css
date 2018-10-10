@@ -118,6 +118,39 @@ body {
 
 .btn-outline-secondary {
   border: 1px solid #4cae4c !important;
+  color: #4cae4c !important;
+}
+
+.fa-arrow-left {
+  color: #4cae4c !important;
+}
+
+.fa-user {
+  float: left;
+  position: relative;
+  color: #d43f3a !important;
+  font-size: 16px !important;
+  top: 25px;
+  left: 12px;
+  z-index: 2;
+}
+
+.input-login {
+  padding-left: 34px !important;
+}
+
+.fa-lock {
+  float: left;
+  position: relative;
+  color: #d43f3a !important;
+  font-size: 16px !important;
+  top: 25px;
+  left: 12px;
+  z-index: 2;
+}
+
+.input-login {
+  padding-left: 34px !important;
 }
 
 th {

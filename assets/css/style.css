@@ -102,10 +102,6 @@ body {
 	height: 50px;
 }
 
-.btn-success {
-	color: #fff !important;
-}
-
 .col-actions {
 	text-align: center;
 	width: 200px !important;
@@ -116,14 +112,14 @@ body {
 	margin-bottom: -1px !important;
 }
 
-.container-form .btn-default {
+.btn-default {
   color: #4cae4c !important;
   background-color: #fff;
   border-color: #4cae4c !important;
 }
 
-.container-form .fa-arrow-left {
-  color: #4cae4c !important;
+.btn-success {
+	color: #fff !important;
 }
 
 .btn-outline-secondary {
@@ -143,10 +139,6 @@ body {
   top: 25px;
   left: 12px;
   z-index: 2;
-}
-
-.input-login {
-  padding-left: 34px !important;
 }
 
 .fa-lock {

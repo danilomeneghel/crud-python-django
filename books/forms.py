@@ -5,3 +5,6 @@ class BookForm(forms.ModelForm):
     class Meta:
         model = Book
         fields = ['name', 'author', 'price', 'description']
+        widgets = {
+            'description': forms.Textarea(attrs={'rows': 8}),
+        }

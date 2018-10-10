@@ -28,7 +28,7 @@ def do_login(request):
             else:
                 error = 'Inactive user'
         else:
-            error = 'User or password invalid!'
+            error = 'Invalid username or password!'
 
     return render(request, 'login.html', {'form': form, 'error': error})
 

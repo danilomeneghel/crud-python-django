@@ -43,13 +43,13 @@ body {
     color: #fff !important;
     font-size: 14px !important;
     padding: 14px 8px !important;
+    line-height: 26px !important;
 }
 .navbar-default .navbar-nav > .show > a, .navbar-default .navbar-nav > .show > a:focus,
 .navbar-default .navbar-nav > .show > a:hover {
     background-color: #377737 !important;
     color: #ffffff !important;
     padding: 14px 8px !important;
-    line-height: 22px;
 }
 .navbar-default .navbar-right {
     margin-right: 0px !important;
@@ -81,7 +81,7 @@ body {
 
 .search-right {
 	display: block;
-	width: 30% !important;
+	width: 32% !important;
 	float: right;
 	text-align: right;
 	height: 40px;
@@ -90,7 +90,7 @@ body {
 .search-right input {
 	float: left;
 	margin-right: 5px !important;
-	margin-left: -98px !important;
+	margin-left: -44px !important;
 }
 
 .pag-right {
@@ -149,10 +149,7 @@ td {
 
 .title-login {
   text-align: center;
-}
-
-.title-register {
-  text-align: center;
+  padding-bottom: 12px;
 }
 
 .link-register {

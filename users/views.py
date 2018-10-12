@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from users.forms import UserModelForm
+from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 
@@ -11,6 +12,17 @@ def create_user(request):
             form.save()
             return redirect('/books')
     return render(request, 'register.html', {'form': form})
+
+@login_required
+def update_user(request, id):
+    user = User.objects.get(id=id)
+    form = UserModelForm(request.POST or None, instance=user)
+
+    if form.is_valid():
+        form.save()
+        return redirect('/books')
+
+    return render(request, 'users-form.html', {'form': form, 'user': user})
 
 def do_login(request):
     form = UserModelForm(request.POST or None)

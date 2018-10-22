@@ -168,14 +168,28 @@ td {
   background-color: #ccffcc !important;
 }
 
+.bg-login {
+  background-color: #449D44;
+  height: 250px !important;
+}
+
 .container-login {
   max-width: 350px;
-  margin: 25px auto;
-  margin-top: 75px !important;
+  margin: 0px auto !important;
+  padding-top: 90px !important;
 }
 
 .container-form {
 	margin-left: -15px !important;
+}
+
+.box-login {
+  box-shadow: 1px 3px 12px #5caa5c;
+}
+
+input:focus {
+  box-shadow: 1px 1px 5px #89bf89 !important;
+  border: 1px solid #89bf89 !important;
 }
 
 .alert {

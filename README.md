@@ -16,7 +16,7 @@ Project of an books registration using Python and Django.
 ## Requirements
 
 - Python >= 3.7.0
-- Django >= 2.1.2
+- Django >= 2.2.13
 - PIP >= 18.0
 
 ## Tecnologies

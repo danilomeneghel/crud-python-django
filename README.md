@@ -18,6 +18,7 @@ Project of an books registration using Python and Django.
 - Python >= 3.7.0
 - Django >= 2.2.13
 - PIP >= 18.0
+- SQLite >= 3
 
 ## Tecnologies
 
@@ -34,6 +35,8 @@ Project of an books registration using Python and Django.
 $ git clone https://github.com/danilomeneghel/crud-python-django.git
 
 $ cd crud-python-django
+$ pip install -r requirements.txt
+
 $ python manage.py migrate
 ```
 

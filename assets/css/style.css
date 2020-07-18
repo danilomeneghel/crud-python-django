@@ -113,22 +113,23 @@ body {
 }
 
 .container-form .btn-default {
-  color: #4cae4c !important;
+  color: #449D44 !important;
   background-color: #fff;
-  border-color: #4cae4c !important;
+  border-color: #449D44 !important;
 }
 
 .btn-success {
-	color: #fff !important;
+  color: #fff !important;
+  background-color: #449D44 !important;
 }
 
 .btn-outline-secondary {
-  border: 1px solid #4cae4c !important;
-  color: #4cae4c !important;
+  border: 1px solid #449D44 !important;
+  color: #449D44 !important;
 }
 
 .fa-arrow-left {
-  color: #4cae4c !important;
+  color: #449D44 !important;
 }
 
 .fa-user {
